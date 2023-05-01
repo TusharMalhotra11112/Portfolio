@@ -1,0 +1,322 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  overflow-x: hidden;
+  overflow-y:overlay;
+  user-select: none;
+  color: white;
+}
+
+*::-webkit-scrollbar{
+  width: 10px;
+}
+*::-webkit-scrollbar-thumb{
+  background:rgba(255,255,255, 0.4);
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
+body{
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+
+/* navbar */
+.myName{
+  transition: all 400ms ease-in-out;
+}
+
+.navbar{
+  /*background-color: rgba(255,255,255, 0.4);
+  */width: 100vw;
+  min-height: 8vh;
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  backdrop-filter: blur(6px);
+  transition:all 300ms ease-in ;
+  -webkit-transition:all 300ms ease-in ;
+  -moz-transition:all 300ms ease-in ;
+  -ms-transition:all 300ms ease-in ;
+  -o-transition:all 300ms ease-in ;
+}
+.navbar>ul>li{
+  margin-right: 5vw;
+  margin-top: 1vh;
+  list-style-type: none;
+  display: inline-block;
+  font-size: 30px;
+  font-family: 'Dancing Script', cursive;
+  transition: all 400ms ease-in-out;
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+}
+.navbar>ul>li:hover{
+  color: red;
+  text-decoration: underline;
+}
+
+.navbar>ul{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  right: 0px;
+  margin-right: 10vw;
+}
+.navbar>span{
+  font-family: 'Pacifico', cursive;
+  margin-left: 10vw;
+  font-size: xx-large;
+  transition: all 500ms ease-in-out;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+}
+.navbar>span:hover{
+  font-family: 'Sedgwick Ave Display', cursive,"Times New Roman", Times, serif;
+  margin-left: 10vw;
+  font-size: xx-large;
+  color: red; 
+}
+.navbar>span:hover>span{
+  font-family: 'Pacifico', cursive,"Times New Roman", Times, serif;
+  color: black;
+}
+
+.navbar>span>span{
+  font-family: 'Sedgwick Ave Display', cursive;
+  color: red;
+  transition: all 500 ease-in-out;
+  -webkit-transition: all 500 ease-in-out;
+  -moz-transition: all 500 ease-in-out;
+  -ms-transition: all 500 ease-in-out;
+  -o-transition: all 500 ease-in-out;
+}
+
+/* landingpage */
+
+.background{
+  background:rgb(89, 0, 255);
+  min-width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.frontText{
+  position: fixed;
+  font-size: 100px;
+  display: flex;
+  top: calc(50% - 100px);
+  left: calc(50% - 120px);
+}
+.bgimg{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+.about{
+  background-color:rgb(15,25,34);
+  height: 100vh;
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.mypic{
+  width:50vw ;
+  aspect-ratio: 1/1;
+  border: black solid 1px;
+}
+
+
+.aboutsection{
+  top: 20vh;
+}
+
+.aboutspan{
+  position: absolute;
+  font-size: 40px;
+  color: rgb(105,25,255);
+  top: 20vh;
+  left: 60vw;
+  font-weight: 600;
+
+}
+.aboutheading{
+  position: absolute;
+  top: 30vh;
+  left: 60vw;
+  right: 10vh;
+  font-size: 50px;
+  width: max-content;
+  font-family:  monospace;
+}
+.aboutheading::before{
+  position: absolute;
+  content:' ';
+  inset: 0px;
+  background: rgb(15,25,34);
+  animation: typing 4800ms steps(14,start) infinite;
+  -webkit-animation: typing 4800ms steps(14,start) infinite;
+}
+
+.aboutheading::after{
+  position:absolute;
+  content: '';
+  inset: 0px;
+  background: black;
+  width: 0.125em;
+  animation: typing 4800ms steps(14,start) infinite,blink 500ms forwards infinite;
+  -webkit-animation: typing 4800ms steps(14,start) infinite,blink 500ms forwards infinite;
+}
+
+@keyframes typing{
+  to {
+    left: 100%;
+  }
+}
+@keyframes blink{
+  50%{
+    background: rgb(0,0,0,0.5);
+  }
+  100%{
+    background: rgb(0,0,0,0);
+  }
+}
+
+.aboutme{
+  position: absolute;
+  top: 45vh;
+  right: 10vh;
+  left: 60vw;
+  text-align: justify;
+}
+
+.contact{
+  height: 100vh;
+  position: sticky;
+  background-color: rgb(15,25,34);
+}
+.project{
+  height: 100vh;
+  position: sticky;
+  background-color: rgb(15,25,34);
+}
+
+.footer{
+  height: 100vh;
+  position: sticky;
+  background-color:rgb(15,25,34) ;
+}
+
+/* contact */
+
+.contact{
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  height: max-content;
+}
+.contactText{
+  position: relative;
+  width: 50vw;
+  height: 100vh;
+}
+
+.contactspan{
+  position: absolute;
+  font-size: 40px;
+  color: rgb(105,25,255);
+  top: 20vh;
+  left: 10vw;
+  font-weight: 600;
+}
+
+.contactDetail{
+  position: absolute;
+  top: 30vh;
+  left: 10vw;
+}
+
+.contactForm{
+  max-width: 50vw;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  font-size: x-large;
+  position:absolute;
+  top: 15vh;
+  width: 50vw;
+  left: 50vw;
+  padding-left: 10vw;
+}
+
+.form>div>input,#formMessage{
+  background-color: rgb(31 39 49);
+  font-size: large;
+  width: 30vw;
+  padding-left:40px;
+  height:7vh;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.form>div>input:focus-visible,#formMessage:focus-visible,.form>input:focus-visible{
+  outline: none;
+}
+.form>div>input:focus,#formMessage:focus{
+  border: rgb(105,25,255) solid 1px;
+}
+#formMessage{
+  max-width: 30vw;
+  min-width: 30vw;
+  padding-top: 10px;
+  min-height: 20vh;
+  max-height: 20vh;
+  height: auto;
+  padding-left:10px ;
+}
+#submitButton{
+  position: relative;
+  background-color: white;
+  color: black;
+  font-size: large;
+  width: 30vw;
+  height:7vh;
+  border-radius: 10px;
+  text-align: center;
+  width: 10vw;
+  transition: all 200ms linear;
+}
+
+#submitButton:hover{
+  background-color: rgb(31 39 49);
+  border: white 1px solid;
+  color: white;
+}
+
+.formdiv{
+    position: relative;
+    margin: 20px 0px;
+  }
+ .contactimg{
+    height: 4vh;
+    position: absolute;
+    top: 2.75rem;
+    left: 5px;
+  }
