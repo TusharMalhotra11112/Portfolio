@@ -4,7 +4,6 @@ import Background from "./Components/background";
 import Header from './Components/header';
 import About from './Components/about';
 import Contact from './Components/contact';
-import Footer from './Components/footer';
 import Project from './Components/project';
 
 function App() {
@@ -37,7 +36,6 @@ function App() {
       <About/>
       <Project/>
       <Contact/>
-      <Footer />
     </div>
   );
 }

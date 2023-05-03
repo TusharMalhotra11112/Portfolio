@@ -3,6 +3,16 @@ import email from '../images/email.svg'
 import github from '../images/github.svg'
 import linkedin from '../images/linkedin.svg'
 function contact(){
+    function submit(){
+        let Name = document.getElementById("formName").value
+        let email = document.getElementById("formEmail").value
+        let message = document.getElementById("formMessage").value
+        console.log(Name +" " + email + " " + message)
+        document.querySelector(".form").style.zIndex = "-1"
+        document.querySelector(".afterForm").style.zIndex = "1"
+
+        console.log("submitted")
+    }
     return(
         <div className="contact" id="contact">
             <div className="contactText">
@@ -18,29 +28,30 @@ function contact(){
                 </div>
             </div>
             <div className="contactForm">
-                <form className="form" onSubmit={console.log("submitted")}>
+                <form className="form" onSubmit={(e)=>{e.preventDefault()}}>
                     <div className='formdiv'>
                         <img src={name} alt='name' className='contactimg' />
                         <label htmlFor="formName">Name</label>
                         <br/>
-                        <input type="text" id="formName" required></input>
+                        <input type="text" id="formName" defaultValue="" required></input>
                         <br/>
                     </div>
                     <div className='formdiv'>
                         <img src={email} alt='email' className='contactimg' />
                         <label htmlFor="formEmail">Email</label>
                         <br/>
-                        <input type="email" id="formEmail" required></input>
+                        <input type="email" id="formEmail" defaultValue="" required></input>
                         <br/>
                     </div>
                     <div className='formdiv'>
                         <label htmlFor="formMessage">Message</label>
                         <br/>
-                        <textarea name="message" rows="10" cols="10" wrap="soft" id="formMessage"  required> </textarea>
+                        <textarea name="message" rows="10" cols="10" wrap="soft" id="formMessage" defaultValue="" required />
                         <br/>
                     </div>
-                    <button type="submit" id="submitButton">Contact Me</button>
+                    <button type="submit" id="submitButton" onClick={submit}>Contact Me</button>
                 </form>
+                <div className="afterForm"><span className='contactspan'>Successfull</span><br/>Thanks For Contacting...<br/>I will soon be in touch</div>
             </div>
         </div>
     )
