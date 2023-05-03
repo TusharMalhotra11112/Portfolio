@@ -33,8 +33,7 @@ body{
 }
 
 .navbar{
-  /*background-color: rgba(255,255,255, 0.4);
-  */width: 100vw;
+  width: 100vw;
   min-height: 8vh;
   position: fixed;
   z-index: 10;
@@ -233,21 +232,30 @@ body{
   position: relative;
   width: 50vw;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  left: 10vw;
+  top: 20vh;
 }
 
 .contactspan{
-  position: absolute;
+  margin: 30px 0px;
   font-size: 40px;
   color: rgb(105,25,255);
-  top: 20vh;
-  left: 10vw;
   font-weight: 600;
 }
-
 .contactDetail{
-  position: absolute;
-  top: 30vh;
-  left: 10vw;
+  margin: 10px 0px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.links{
+  margin: 30px 0px ;
+}
+.linkImg{
+  width: 50px;
+  margin-right: 20px;
 }
 
 .contactForm{
@@ -276,7 +284,7 @@ body{
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
-.form>div>input:focus-visible,#formMessage:focus-visible,.form>input:focus-visible{
+.form>div>input:focus-visible,#formMessage:focus-visible,.form>button:focus-visible{
   outline: none;
 }
 .form>div>input:focus,#formMessage:focus{

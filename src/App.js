@@ -8,6 +8,16 @@ import Footer from './Components/footer';
 import Project from './Components/project';
 
 function App() {
+  window.addEventListener("scroll",function(){
+    if(this.scrollY >= window.innerHeight){
+      document.querySelector("nav").style.backgroundColor = "rgba(0,0,0,0.4)"
+    }
+    else{
+      document.querySelector("nav").style.backgroundColor = "transparent"
+    }
+    
+  })
+
   window.addEventListener("mousemove",shift)
   function shift(event){
     let img = document.querySelector(".bgimg")
@@ -19,6 +29,7 @@ function App() {
     let y=(midY-currentY)/20
     img.style.transform = "translateX("+x+ "px) translateY("+y+"px)"
   }
+
   return (
     <div className="main">    
       <Header />
