@@ -1,3 +1,8 @@
+:root{
+  --background:rgb(15,25,34);
+  --customcolor:rgb(140, 49, 236);
+  --headcolor:rgb(246, 0, 168);
+}
 *{
   margin: 0px;
   padding: 0px;
@@ -59,7 +64,7 @@ body{
   -o-transition: all 400ms ease-in-out;
 }
 .navbar>ul>li:hover{
-  color: red;
+  color: var(--headcolor);
   text-decoration: underline;
 }
 
@@ -84,7 +89,7 @@ body{
   font-family: 'Sedgwick Ave Display', cursive,"Times New Roman", Times, serif;
   margin-left: 10vw;
   font-size: xx-large;
-  color: red; 
+  color: var(--headcolor); 
 }
 .navbar>span:hover>span{
   font-family: 'Pacifico', cursive,"Times New Roman", Times, serif;
@@ -93,7 +98,7 @@ body{
 
 .navbar>span>span{
   font-family: 'Sedgwick Ave Display', cursive;
-  color: red;
+  color: var(--headcolor);
   transition: all 500 ease-in-out;
   -webkit-transition: all 500 ease-in-out;
   -moz-transition: all 500 ease-in-out;
@@ -104,7 +109,7 @@ body{
 /* landingpage */
 
 .background{
-  background:rgb(89, 0, 255);
+  background:var(--customcolor);
   min-width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -124,9 +129,10 @@ body{
   height: 100vh;
 }
 
+/* about */
 
 .about{
-  background-color:rgb(15,25,34);
+  background-color:var(--background);
   height: 100vh;
   position: sticky;
   display: flex;
@@ -148,7 +154,7 @@ body{
 .aboutspan{
   position: absolute;
   font-size: 40px;
-  color: rgb(105,25,255);
+  color: var(--customcolor);
   top: 20vh;
   left: 60vw;
   font-weight: 600;
@@ -167,7 +173,7 @@ body{
   position: absolute;
   content:' ';
   inset: 0px;
-  background: rgb(15,25,34);
+  background: var(--background);
   animation: typing 4800ms steps(14,start) infinite;
   -webkit-animation: typing 4800ms steps(14,start) infinite;
 }
@@ -203,28 +209,43 @@ body{
   left: 60vw;
   text-align: justify;
 }
-
-.contact{
-  height: 100vh;
-  position: sticky;
-  background-color: rgb(15,25,34);
-}
+/* Project */
 .project{
   height: 100vh;
   position: sticky;
-  background-color: rgb(15,25,34);
+  background-color: var(--background);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-
-.footer{
+.projectTab{
   height: 100vh;
-  position: sticky;
-  background-color:rgb(15,25,34) ;
+  width: calc(100vw - 240px);
+  background-color: red;
 }
+.project>button{
+  background: var(--background);
+  font-size: 50px;
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+  margin: 20px 0px;
+  border: 1px var(--background) solid;
+}
+.project>button:hover{
+  border: 2px black solid;
 
+}
+.project>button>img{
+  width: 100px;
+  height: 100px;
+}
 /* contact */
 
 .contact{
   position: relative;
+  background-color: var(--background);
   display: flex;
   height: 100vh;
   overflow: hidden;
@@ -242,7 +263,7 @@ body{
 .contactspan{
   margin: 30px 0px;
   font-size: 40px;
-  color: rgb(105,25,255);
+  color: var(--customcolor);
   font-weight: 600;
 }
 .contactDetail{
@@ -301,7 +322,7 @@ body{
   outline: none;
 }
 .form>div>input:focus,#formMessage:focus{
-  border: rgb(105,25,255) solid 1px;
+  border: var(--customcolor) solid 1px;
 }
 #formMessage{
   max-width: 30vw;

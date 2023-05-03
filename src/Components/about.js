@@ -5,8 +5,8 @@ function about(){
             <section className="aboutsection">
                 <span className="aboutspan">About</span>
                 <h1 className="aboutheading">Web Developer.</h1>
-                <p className="aboutme">Proident sit commodo ex irure non culpa nostrud labore dolor et sit ex nostrud laborum. 
-                Duis exercitation ea nulla ullamco exercitation sint enim quis proident. Eiusmod nostrud commodo aliqua commodo dolore sit dolore velit velit. Minim eiusmod Lorem fugiat nulla duis et minim enim tempor aute excepteur nisi voluptate amet. Et fugiat exercitation pariatur fugiat magna sit ipsum proident mollit in nulla eu aliqua. In officia exercitation fugiat velit Lorem elit tempor esse sit est.</p>
+                <p className="aboutme">I'm Tushar Malhotra, a passionate Web Developer and Coder. I love Working on various things and love the experience and knowledge I get from each.
+                I am an curious individual who just loves to learn new things everytime.</p>
             </section>
         </div>
     )

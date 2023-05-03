@@ -9,7 +9,7 @@ import Project from './Components/project';
 function App() {
   window.addEventListener("scroll",function(){
     if(this.scrollY >= window.innerHeight){
-      document.querySelector("nav").style.backgroundColor = "rgba(0,0,0,0.4)"
+      document.querySelector("nav").style.backgroundColor = "rgba(15,25,34,0.4)"
     }
     else{
       document.querySelector("nav").style.backgroundColor = "transparent"
