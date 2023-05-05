@@ -28,7 +28,7 @@ function contact(){
                 </div>
             </div>
             <div className="contactForm">
-                <form className="form" onSubmit={(e)=>{e.preventDefault()}}>
+                <form className="form" onSubmit={(e)=>{e.preventDefault();submit()}}>
                     <div className='formdiv'>
                         <img src={name} alt='name' className='contactimg' />
                         <label htmlFor="formName">Name</label>
@@ -49,7 +49,7 @@ function contact(){
                         <textarea name="message" rows="10" cols="10" wrap="soft" id="formMessage" defaultValue="" required />
                         <br/>
                     </div>
-                    <button type="submit" id="submitButton" onClick={submit}>Contact Me</button>
+                    <button type="submit" id="submitButton">Contact Me</button>
                 </form>
                 <div className="afterForm"><span className='contactspan'>Successfull</span><br/>Thanks For Contacting...<br/>I will soon be in touch</div>
             </div>

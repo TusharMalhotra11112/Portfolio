@@ -231,9 +231,10 @@ body{
   display: flex;
   flex-direction: column;
   margin-top: 30vh ;
+  transition: all 500ms ease-in-out;
 }
 .projectTab:hover .projectAbout{
-  transform: translateY(200%);
+  transform: translateY(200%) ;
 }
 .projectTab:hover .projectDisplay{
   scale: 1.1 1.2;
@@ -242,6 +243,31 @@ body{
 .projectTab:hover .projectDetail{
   color: white;
 }
+
+@keyframes left{
+  49%{
+    transform: translateX(-200%);
+  }
+  50%{
+    transform: translateX(200%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
+@keyframes right{
+  49%{
+    transform: translateX(200%);
+  }
+  50%{
+    transform: translateX(-200%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
+
+
 .project>button{
   background: var(--background);
   font-size: 50px;
@@ -251,9 +277,10 @@ body{
   margin: 20px 0px;
   z-index: 2;
   background-color: transparent;
+  opacity: 0.5;
 }
 .project>button:hover{
-  border: 2px black solid;
+  opacity: 0.2;
 
 }
 .project>button>img{
@@ -265,7 +292,7 @@ body{
   width: 100%;
   height: 50%;
   transition: all 600ms ease-in-out;
-  background-color: blue;
+  border: 1px solid black;
 }
 .ProjectHeading{
   font-size: 60px;
@@ -278,7 +305,6 @@ body{
   width: 100%;
   height: 10%;
   transition: all 600ms ease-in-out;
-  /* display: none; */
   position: relative;
   background-color: var(--background);
   z-index: -1;
@@ -365,7 +391,7 @@ body{
   background-color: rgb(31 39 49);
   font-size: large;
   width: 30vw;
-  padding-left:40px;
+  padding-left:5vh;
   height:7vh;
   border-radius: 10px;
   -webkit-border-radius: 10px;
