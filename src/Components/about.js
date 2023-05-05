@@ -1,4 +1,4 @@
-function about(){
+function About(){
     return(
         <div className="about" id="about">
             <img alt="myphoto" className="mypic"></img>
@@ -11,4 +11,4 @@ function about(){
         </div>
     )
 }
-export default about
+export default About

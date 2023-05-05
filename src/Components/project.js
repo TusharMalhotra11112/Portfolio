@@ -1,12 +1,12 @@
-import { useState as UseState, useEffect as UseEffect} from "react"
+import { useState,useEffect } from "react"
 import left from "../images/left.svg"
 import right from "../images/right.svg"
 import data from "./projectData"
 
-function project(){
+function Project(){
     const n=data.length
-    const [projectNo,setProjectNo] = UseState(0)
-    UseEffect(()=>{
+    const [projectNo,setProjectNo] = useState(0)
+    useEffect(()=>{
         if(projectNo === 0){
             document.querySelector('.leftButton').style.opacity = "0.2"
         }
@@ -20,7 +20,7 @@ function project(){
         else{
             document.querySelector('.rightButton').style.opacity = "0.7"
         }
-    },[projectNo])
+    },[projectNo,n])
 
     function paneLeft(){
         if(projectNo < n-1){
@@ -42,12 +42,12 @@ function project(){
         <div className="project" id="project">
             <button className="leftButton" onClick={paneRight}> <img src={left} alt="left arrow"/> </button>
             <div className="projectTab">
-                <img className="projectDisplay" src={data[projectNo].src} alt={data[projectNo].alt} />
+                <img className="projectDisplay" src={data[projectNo].src} alt={data[projectNo].alt}  onClick={()=>{window.open(data[projectNo].url)}}/>
                 <div className="ProjectHeading">{data[projectNo].title}</div>
                 <div className="projectDetail">
                     {data[projectNo].description}
                     <div className="projectAbout">
-                        Status:<span>{data[projectNo].status}</span>
+                        Status: <span className="status">{data[projectNo].status}</span>
                     </div>
                 </div>
             </div>
@@ -55,4 +55,4 @@ function project(){
         </div>
     )
 }
-export default project
+export default Project

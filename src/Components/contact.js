@@ -2,7 +2,7 @@ import name from '../images/Name.svg'
 import email from '../images/email.svg'
 import github from '../images/github.svg'
 import linkedin from '../images/linkedin.svg'
-function contact(){
+function Contact(){
     function submit(){
         let Name = document.getElementById("formName").value
         let email = document.getElementById("formEmail").value
@@ -27,6 +27,7 @@ function contact(){
                     </a>
                 </div>
             </div>
+            
             <div className="contactForm">
                 <form className="form" onSubmit={(e)=>{e.preventDefault();submit()}}>
                     <div className='formdiv'>
@@ -56,4 +57,4 @@ function contact(){
         </div>
     )
 }
-export default contact
+export default Contact

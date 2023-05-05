@@ -1,4 +1,4 @@
-function header(){
+function Header(){
     function scrollToAbout(){
         document.getElementById("about").scrollIntoView({
             behavior:'smooth',
@@ -36,4 +36,4 @@ function header(){
         </div>
     )
 }
-export default header
+export default Header
