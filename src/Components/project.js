@@ -42,7 +42,7 @@ function Project(){
         <div className="project" id="project">
             <button className="leftButton" onClick={paneRight}> <img src={left} alt="left arrow"/> </button>
             <div className="projectTab">
-                <img className="projectDisplay" src={data[projectNo].src} alt={data[projectNo].alt}  onClick={()=>{window.open(data[projectNo].url)}}/>
+                <img className="projectDisplay" src={data[projectNo].img} alt={data[projectNo].alt}  onClick={()=>{window.open(data[projectNo].url)}}/>
                 <div className="ProjectHeading">{data[projectNo].title}</div>
                 <div className="projectDetail">
                     {data[projectNo].description}

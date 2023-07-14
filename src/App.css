@@ -142,8 +142,10 @@ body{
 }
 
 .mypic{
-  width:50vw;
-  aspect-ratio: 1/1;
+  width:40vw;
+  height: 80vh;
+  margin-top: 10vh;
+  margin-left: 5vw; 
 }
 
 
@@ -284,7 +286,8 @@ body{
 }
 
 .projectDisplay{
-  width: 100%;
+  margin-left: 10%;
+  width: 80%;
   height: 50%;
   transition: all 600ms ease-in-out;
 }
@@ -458,8 +461,9 @@ body{
       font-size: 40px;
     }
     .mypic{
-      width: 100vw;
-      height: 100vw;
+      width: 80vw;
+      margin-left: 10vw;
+      height: 60vw;
       aspect-ratio: 1/1;
     }
     .aboutspan{
@@ -490,16 +494,21 @@ body{
     .projectTab{
       position: absolute;
       left: 0px;
-      width: 100vw;
+      width: 80vw;
+    }
+    .projectDisplay{
+      width: 80vw;
+      height: 30vh;
     }
     .ProjectHeading{
       font-size: 40px;
       text-align: center;
     }
     .projectDetail{
+      margin-left: 10vw;
       font-size: 20px;
       color: white;
-      text-align: center;
+      text-align: justify;
     }
     .projectAbout{
       font-size: 15px;
@@ -568,11 +577,11 @@ body{
       height: 4vh;
     }
     #formMessage{
-      max-width: 80%;
-      min-width: 80%;
+      max-width: 90%;
+      min-width: 90%;
     }
     #submitButton{
-      width: 60vw;
+      width: 30vw;
       font-size: medium;
     }
 

@@ -1,7 +1,8 @@
+
 function About(){
     return(
         <div className="about" id="about">
-            <img alt="myphoto" className="mypic"></img>
+            <img src="myImg.jpeg" alt="myphoto" className="mypic"></img>
             <section className="aboutsection">
                 <span className="aboutspan">About</span>
                 <h1 className="aboutheading">Web Developer.</h1>
