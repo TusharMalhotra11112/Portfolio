@@ -63,8 +63,7 @@ body{
   list-style-type: none;
   display: inline-block;
   font-size: 30px;
-  font-family: 'Dancing Script', cursive;
-  transition: all 400ms ease-in-out;
+  font-family: 'Poppins', sans-serif;  transition: all 400ms ease-in-out;
   -webkit-transition: all 400ms ease-in-out;
   -moz-transition: all 400ms ease-in-out;
   -ms-transition: all 400ms ease-in-out;
@@ -123,6 +122,8 @@ body{
 }
 .frontText{
   font-size: 80px; 
+  font-family: 'Oxygen', sans-serif;
+
 }
 .bgimg{
   position: fixed;
@@ -201,6 +202,8 @@ body{
 }
 
 .aboutme{
+  font-family: 'Oxygen', sans-serif;
+  font-size: 20px;
   position: absolute;
   top: 45vh;
   right: 10vh;
@@ -343,11 +346,13 @@ body{
 }
 .contactspan{
   margin: 30px 0px;
-  font-size: 40px;
+  font-size: 60px;
+  font-family: 'Oxygen', sans-serif;
   color: var(--customcolor);
   font-weight: 600;
 }
 .contactDetail{
+  font-family: 'Open Sans', sans-serif;
   margin: 10px 0px;
   font-size: 40px;
   font-weight: 700;

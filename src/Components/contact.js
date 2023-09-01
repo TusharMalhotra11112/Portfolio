@@ -12,6 +12,7 @@ function Contact(){
         document.querySelector(".afterForm").style.zIndex = "1"
 
         console.log("submitted")
+        window.location.href = `mailto:malhotratushar999@gmail.com?Subject=contacting through portfolio&body=${message}`
     }
     return(
         <div className="contact" id="contact">
@@ -29,19 +30,19 @@ function Contact(){
             </div>
             
             <div className="contactForm">
-                <form className="form" onSubmit={(e)=>{e.preventDefault();submit()}}>
+                <form className="form" onSubmit={(e)=>{e.preventDefault();submit()}} method='POST' action='mailto: malhotratushar999@gmail.com' enctype="multipart/form-data">
                     <div className='formdiv'>
                         <img src={name} alt='name' className='contactimg' />
                         <label htmlFor="formName">Name</label>
                         <br/>
-                        <input type="text" id="formName" defaultValue="" required></input>
+                        <input type="text" id="formName" defaultValue="" name="name" required></input>
                         <br/>
                     </div>
                     <div className='formdiv'>
                         <img src={email} alt='email' className='contactimg' />
                         <label htmlFor="formEmail">Email</label>
                         <br/>
-                        <input type="email" id="formEmail" defaultValue="" required></input>
+                        <input type="email" id="formEmail" defaultValue="" name="email" required></input>
                         <br/>
                     </div>
                     <div className='formdiv'>
